@@ -1,0 +1,57 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circulo{
+ background-image: url(helices.png);
+ border-radius: 50% 50% 50% 50%;
+ border: 3px solid rgb(12, 41, 167);
+ display: block;
+ width: 313px;
+ height: 313px;
+ animation: fananim linear infinite;
+ margin-top: 5%;
+ margin-bottom: 3%;
+ margin-left: 3%;
+}
+
+@keyframes fananim{
+100%{
+    transform: rotate(360deg);
+}
+}
+
+
+.main button:nth-last-child(5){
+    background-color: rgb(0, 255, 0);
+}
+
+.main button:nth-last-child(4){
+    background-color: rgb(230, 22, 40);
+}
+
+button{
+cursor: pointer;
+width: 70px;
+height: 70px;
+padding: 20px 10px;
+font-weight: 550;
+font-size: 20px;
+border: none;
+background-color: rgb(74, 104, 235);
+border-radius: 50%;
+transition: 0.1s;
+display: inline-block;
+}
+
+button:active{
+box-shadow: 0px 10px 10px black;
+transform: scale(0.95);
+}
+
+.main{
+    margin-left: 30%;
+}
